@@ -1,0 +1,4 @@
+interface:
+  display_name: "Word Visio OLE"
+  short_description: "Edit embedded Visio objects inside Word"
+  default_prompt: "Use $word-visio-ole-editor to inspect and edit Visio/OLE original drawings embedded inside local Word documents. Preserve the editable embedded object; do not flatten to an image unless explicitly allowed."
