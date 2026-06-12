@@ -7,6 +7,8 @@ description: Edit Microsoft Visio drawings embedded as OLE objects inside Word .
 
 Use this skill for Word documents that contain embedded Visio/OLE drawings and the user wants the original editable object modified in place. The goal is to preserve the double-click-editable Visio object inside Word, not flatten it into PNG/JPG/EMF unless the user explicitly permits that fallback.
 
+For Chinese thesis delivery that also needs figure/table renumbering, TOC checks, and cross-page continuation-table handling, use the bundled `thesis-word-visio-continuation-suite` skill in this repository.
+
 ## Operating Rules
 
 - Work on a copy by default; never overwrite the source unless the user explicitly asks.

@@ -1,0 +1,3 @@
+display_name: Thesis Word Visio Continuation Suite
+short_description: Word thesis delivery with Visio preservation and mandatory continuation-table checks.
+default_prompt: Fix this thesis DOCX while preserving editable Visio diagrams, then re-check figure/table numbering, TOC, PDF layout, and cross-page continuation tables.
