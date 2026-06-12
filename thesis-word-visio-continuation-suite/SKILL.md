@@ -11,6 +11,8 @@ Use this skill for thesis DOCX work where layout matters. It coordinates Word de
 
 Whenever a change may affect pagination, table location, table height, captions, headings, figures, or surrounding text, run a continuation-table review before final delivery.
 
+The continuation-table review must inspect every actual Word table in the document, not only repeated table numbers, existing continuation captions, or tables flagged by PDF text search. A table can cross pages without any repeated caption; this must still be detected and fixed.
+
 Changes that require the review:
 
 - Adding, deleting, rewriting, or moving paragraphs.
@@ -48,7 +50,7 @@ Only add a continuation title when the table actually crosses pages. If two inde
 5. Update fields and TOC using Word COM when the document has a table of contents, captions, or references.
 6. Export PDF.
 7. Run continuation-table review on the exported PDF and DOCX.
-8. Fix any table that crosses pages without a proper continuation title.
+8. Inspect all Word tables and fix any table that crosses pages without a proper continuation title.
 9. Re-export PDF and repeat until continuation tables, captions, and TOC are correct.
 10. Verify final deliverables:
     - Figure captions are sequential.
@@ -70,11 +72,13 @@ python "$env:USERPROFILE\.codex\skills\thesis-word-visio-continuation-suite\scri
 
 Treat the audit script as a detector, not an absolute judge. Always visually inspect the PDF pages it flags.
 
-When automation is inconclusive, use Word COM to inspect each table's page span:
+Required Word COM pass:
 
 - `table.Range.Information(wdActiveEndPageNumber)` for the end page.
 - `table.Range.Information(wdActiveEndAdjustedPageNumber)` when page numbering restarts matter.
 - Compare the page of the caption immediately before the table with the first and last page of the table range.
+- Inspect row-level page numbers for every table. If a row starts on a later page than the table's first row and there is no continuation caption immediately before the continued part, split the table at that row and insert the continuation title.
+- Treat the PDF text audit as secondary evidence only. It can miss a cross-page table when the continued page has no caption.
 
 ## Continuation Fix Guidelines
 
