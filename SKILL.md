@@ -1,6 +1,6 @@
 ---
 name: word-visio-ole-editor
-description: Edit Microsoft Visio drawings embedded as OLE objects inside Word .docx/.doc files on Windows. Use when Codex must inspect, activate, modify, preserve, or verify Word-embedded Visio original figures, including requests in Chinese such as 修改Word里的Visio原图, 直接改Word中的Visio图, 保留可双击编辑的Visio对象, 不要截图替换, or edit embedded OLE diagrams. Requires local Microsoft Word; editing Visio internals requires local Microsoft Visio.
+description: Use when Word .docx/.doc files contain embedded Microsoft Visio/OLE original drawings that must stay editable, be inspected, activated, modified, preserved, or verified. Trigger for Word-embedded Visio, editable Visio object, Visio original figure, OLE diagram, 修改Word里的Visio原图, 直接改Word中的Visio图, 保留可双击编辑的Visio对象, 不要截图替换, 可编辑图, or thesis diagrams that must not be flattened.
 ---
 
 # Word Visio OLE Editor

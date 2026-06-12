@@ -1,6 +1,10 @@
-# Word Visio OLE Editor
+# Word Visio OLE Editor and Thesis Continuation Tables
 
-Codex skills for Windows Word thesis/document workflows that need editable Visio preservation.
+Codex skills for Windows Word thesis/document workflows that need editable Visio preservation, thesis figure/table numbering, table-of-contents checks, and cross-page continuation-table handling.
+
+中文关键词：Word Visio 原图、Visio 可编辑对象、论文图表排号、毕业论文续表、表格跨页、目录错误、图号表号更新、Word COM、Visio OLE。
+
+English keywords: Word embedded Visio, editable Visio OLE, thesis DOCX, continuation table, cross-page table, figure numbering, table numbering, table of contents, Word COM, Visio automation.
 
 This repository contains two related skills:
 
@@ -10,11 +14,21 @@ This repository contains two related skills:
 ## Typical Requests
 
 - 修改 Word 里的 Visio 原图
+- 修改Word里的Visio原图
+- Visio原图不要截图替换
 - 直接改 Word 中可双击编辑的 Visio 图
 - 保留内嵌 Visio/OLE 对象，不要截图替换
 - 论文图表重新排号
 - 表格跨页时制作续表标题
+- 续表不要重新编号
+- 表4-10、图12、图13、图14无法生成或编号错乱
 - 修改论文内容后重新检查目录、图号、表号和续表
+
+## Who Should Use This
+
+Use this repository when a thesis, graduation paper, or Word deliverable has diagrams that must stay editable as original Visio/OLE objects, or when changing DOCX content may shift tables across pages and require continuation captions such as `表5 技术可行性分析表（续）`.
+
+Do not use it as a generic screenshot replacement tool. Its main value is preserving editable Word-embedded Visio drawings and preventing thesis layout regressions after Word repaginates the document.
 
 ## Requirements
 

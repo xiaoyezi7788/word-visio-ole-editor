@@ -1,6 +1,6 @@
 ---
 name: thesis-word-visio-continuation-suite
-description: Use for Chinese thesis or graduation-paper Word DOCX delivery that involves tables, figures, pagination, captions, table-of-contents, or embedded Visio/OLE original diagrams. Trigger whenever a thesis DOCX is edited, especially when content movement may affect table page breaks, when the user mentions 续表, 表格跨页, 图表排号, 目录错误, Visio原图, 可编辑图, Word论文修订, or preserving editable embedded diagrams.
+description: Use when a Chinese thesis or graduation-paper Word DOCX has figure/table numbering, table-of-contents, pagination, cross-page table, continuation caption, or editable Visio/OLE original-diagram risks. Trigger for 续表, 表格跨页, 续表不要重新编号, 图表排号, 表4-10, 图12图13图14, 目录错误, Word论文修订, Visio原图, 可编辑图, and any content edit that may move tables across pages.
 ---
 
 # Thesis Word Visio Continuation Suite

@@ -1,3 +1,4 @@
-display_name: Thesis Word Visio Continuation Suite
-short_description: Word thesis delivery with Visio preservation and mandatory continuation-table checks.
-default_prompt: Fix this thesis DOCX while preserving editable Visio diagrams, then re-check figure/table numbering, TOC, PDF layout, and cross-page continuation tables.
+interface:
+  display_name: "Thesis DOCX Visio and Continuation Tables"
+  short_description: "Fix thesis Visio figures and continuation tables"
+  default_prompt: "Use $thesis-word-visio-continuation-suite to revise this thesis DOCX, preserve editable Visio originals, re-check figure/table numbering, TOC entries, PDF layout, and cross-page continuation tables."
